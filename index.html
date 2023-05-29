@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Encriptador de textos</title>
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="src/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet" />
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet" /> -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Encriptador de textos 💗</h1>
+        </header>
+
+        <section class="campos">
+            <div class="div-encriptar">
+                <h3 class="input">Colocá aquí tu texto a encriptar:</h3>
+                <textarea
+                    type="text"
+                    title="texto-encriptar"
+                    id="texto-encriptar"
+                    class="texto-encriptar"
+                    name="texto-encriptar"
+                    contenteditable
+                ></textarea>
+            </div>
+            <div class="botones">
+                <button type="submit" title="boton-encriptar" onclick="encriptarMensaje()">
+                    <h3>Encriptar texto</h3>
+                </button>
+            </div>
+            <h3 class="output">Texto encriptado:</h3>
+            <div class="output-encriptado"> </div>
+            <div class="division"></div>
+            <div class="div-desencriptar">
+                <h3 class="input">Colocá aquí tu texto a desencriptar:</h3>
+                <textarea
+                    type="text"
+                    title="texto-desencriptar"
+                    id="texto-desencriptar"
+                    class="texto-desencriptar"
+                    name="texto-desencriptar"
+                    contenteditable
+                ></textarea>
+            </div>
+            <div class="botones">
+                <button type="submit" title="boton-desencriptar" onclick="desEncriptarMensaje()">
+                    <h3>Desencriptar texto</h3>
+                </button>
+            </div>
+            <h3 class="output">Texto desencriptado:</h3>
+            <div class="output-desencriptado"> </div>
+        </section>
+
+        <footer>
+            <p class="footer">~ Lean Mazza 2023 ✨</p>
+        </footer>
+        <script src="src/script.js"></script>
+    </body>
+</html>
